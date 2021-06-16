@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.parfume_jualanqoo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Parfume JualanQoo"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Parfume_jualanqoo">
+        <activity android:name=".act_transaksi"></activity>
+        <activity android:name=".act_produk_ed" />
+        <activity android:name=".act_produk" />
+        <activity android:name=".act_orderhistory" />
+        <activity android:name=".act_parfum" />
+        <activity android:name=".act_faq" />
+        <activity android:name=".act_dash" />
+        <activity android:name=".act_home" />
+        <activity android:name=".act_register" />
+        <activity android:name=".act_login" />
+        <activity android:name=".act_add" />
+        <activity android:name=".act_botol" />
+        <activity android:name=".act_upload" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

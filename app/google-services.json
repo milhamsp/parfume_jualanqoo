@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "127432216936",
+    "firebase_url": "https://jualanqoo-default-rtdb.firebaseio.com",
+    "project_id": "jualanqoo",
+    "storage_bucket": "jualanqoo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127432216936:android:8e144435760e3e2b85c6dd",
+        "android_client_info": {
+          "package_name": "com.android.parfume_jualanqoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127432216936-55e9vksq9sa77dtv6u50dt2mmra4gojo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdDGpE2jOq0-Y4mz0ajgbcA2Mwv-Q3bMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127432216936-55e9vksq9sa77dtv6u50dt2mmra4gojo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

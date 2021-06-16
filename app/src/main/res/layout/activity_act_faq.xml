@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=""
+    android:orientation="vertical"
+    android:fontFamily="@font/roboto"
+    android:background="#0F5366">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:onClick="btn_tohome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_back_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="FAQ"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_home"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P:\nBagaimana cara memesan produk parfum?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="J:\n1. Klik kategori yang diinginkan\n2. Pilih Produk\n3. Pilih jumlah ukuran ml yang akan dipesan\n4. Klik Pesan Sekarang\n5. Klik Histori Transaksi\n6. Pilih Produk yang sudah dipesan\n7. Cek Harganya dan transfer ke nomor rekening tertera\n8. Setelah transfer berhasil upload bukti bayar\n9. Upload Bukti Bayar dapat dilakukan dengan cara klik Upload Bukti Pembayaran dan upload foto/gambar bukti pembayaran yang sudah lunas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_bgtemplate"
+                android:text="Logout"
+                android:textSize="24dp" />-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
