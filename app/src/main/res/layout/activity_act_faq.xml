@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=""
+    tools:context=".act_faq"
     android:orientation="vertical"
     android:fontFamily="@font/roboto"
     android:background="#0F5366">
@@ -55,6 +55,54 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="P:
+                    \nApabila ada kendala, bagaimana cara menghubungi pihak Parfum Jualanqoo?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="J:
+                    \nHubungi via Whatsapp ke nomor dibawah ini:
+                    \n082112193494"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P:
+                    \nBerapa nomor rekening dari pihak Parfume Jualanqoo?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="J:
+                    \n6871507420
+                    \na/n Farhan Difa"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="P:\nBagaimana cara memesan produk parfum?"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -62,7 +110,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="J:\n1. Klik kategori yang diinginkan\n2. Pilih Produk\n3. Pilih jumlah ukuran ml yang akan dipesan\n4. Klik Pesan Sekarang\n5. Klik Histori Transaksi\n6. Pilih Produk yang sudah dipesan\n7. Cek Harganya dan transfer ke nomor rekening tertera\n8. Setelah transfer berhasil upload bukti bayar\n9. Upload Bukti Bayar dapat dilakukan dengan cara klik Upload Bukti Pembayaran dan upload foto/gambar bukti pembayaran yang sudah lunas"
+                    android:text="J:
+                    \n1. Klik kategori yang diinginkan
+                    \n2. Pilih Produk
+                    \n3. Pilih jumlah ukuran ml atau botol yang akan dipesan
+                    \n4. Klik Beli
+                    \n5. Transfer ke Nomor Rekening yang tertera
+                    \n6. Upload Bukti Bayar pada menu Bukti Bayar
+                    \n7. Tunggu hingga dihubungi oleh pihak Parfume Jualanqoo via Whatsapp"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>

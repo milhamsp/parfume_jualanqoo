@@ -28,12 +28,12 @@ public class act_dash extends AppCompatActivity {
                 .setMessage("Apakah ingin keluar dari aplikasi?")
                 .setIcon(R.drawable.icon)
                 .setCancelable(false)
-                .setNegativeButton("Ok",new DialogInterface.OnClickListener() {
+                .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         finish();
                     }
                 })
-                .setPositiveButton("Batal", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Batal", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
@@ -51,14 +51,14 @@ public class act_dash extends AppCompatActivity {
                 .setMessage("Yakin ingin Logout?")
                 .setIcon(R.drawable.icon)
                 .setCancelable(false)
-                .setNegativeButton("Ok",new DialogInterface.OnClickListener() {
+                .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         auth.signOut();
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         finish();
                     }
                 })
-                .setPositiveButton("Batal", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Batal", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
@@ -85,6 +85,11 @@ public class act_dash extends AppCompatActivity {
 
     public void btn_transaksi(View view) {
         startActivity(new Intent(getApplicationContext(),act_transaksi.class));
+        finish();
+    }
+
+    public void btn_bukti(View view) {
+        startActivity(new Intent(getApplicationContext(),act_bukti.class));
         finish();
     }
 }

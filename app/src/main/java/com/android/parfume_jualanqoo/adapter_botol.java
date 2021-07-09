@@ -34,7 +34,7 @@ public class adapter_botol extends FirestoreRecyclerAdapter<model_parfum, adapte
     @NonNull
     @Override
     public holder_parfum onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_act_list_parfum,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_act_list_botol,parent,false);
         return new holder_parfum(view);
     }
 

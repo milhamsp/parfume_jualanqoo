@@ -32,7 +32,7 @@ public class act_botol extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference produk = db.collection("botol");
-    private adapter_parfum adapter;
+    private adapter_botol adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +43,15 @@ public class act_botol extends AppCompatActivity {
     }
 
     private void setUpRecycleView() {
-        Query query = db.collection("botol");
+        Query query = db.collection("botol")/*.whereGreaterThan("stok_produk",0)*/;
         FirestoreRecyclerOptions<model_parfum> options = new FirestoreRecyclerOptions.Builder<model_parfum>()
                 .setQuery(query,model_parfum.class).build();
-        adapter = new adapter_parfum(options);
+        adapter = new adapter_botol(options);
         RecyclerView recyclerView = findViewById(R.id.recycler_botol);
         /*recyclerView.setHasFixedSize(true);*/
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
-        adapter.setOnItemClickListener(new adapter_parfum.OnItemClickListener() {
+        adapter.setOnItemClickListener(new adapter_botol.OnItemClickListener() {
             @Override
             public void onItemClick(DocumentSnapshot documentSnapshot, int position) {
                 model_parfum model = documentSnapshot.toObject(model_parfum.class);

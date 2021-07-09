@@ -45,7 +45,7 @@ public class act_parfum extends AppCompatActivity {
     }
 
     private void setUpRecycleView() {
-        Query query = db.collection("parfum");
+        Query query = db.collection("parfum");/*.whereGreaterThan("stok_produk",0)*/
         FirestoreRecyclerOptions<model_parfum> options = new FirestoreRecyclerOptions.Builder<model_parfum>()
                 .setQuery(query,model_parfum.class).build();
         adapter = new adapter_parfum(options);

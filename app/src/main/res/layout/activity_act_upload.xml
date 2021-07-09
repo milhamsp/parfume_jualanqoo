@@ -16,7 +16,7 @@
         android:gravity="center_horizontal"
         android:layout_marginBottom="20dp">
         <ImageView
-            android:id="@+id/btn_tohome"
+            android:onClick="btn_tohome"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/ic_back_light"
@@ -25,16 +25,13 @@
             android:layout_gravity="left"/>
     </FrameLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_home"
-        android:padding="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@drawable/bg_home">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,37 +40,88 @@
                 android:layout_marginTop="20dp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
-                android:textSize="24dp"/>
-            <LinearLayout
+                android:textSize="24sp"/>
+        </LinearLayout>
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="vertical">
-                <ImageButton
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/ic_add_dark"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="20dp">
+                <Button
+                    android:id="@+id/btn_pilih"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Silahkan transfer ke Nomor Rekening dibawah ini:\n\n739093xxx\na/n. Parfume Jualanqoo\n\nCatatan:\nUpload foto/gambar yang jelas\n\nApabila ada pertanyaan silahkan hubungin no dibawah ini:\n\n0851xxxxxxxxx"
-                    android:textColor="@color/black"
+                    android:text="Pilih File"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_bgtemplate"/>
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/btn_pilih"
+                    android:layout_above="@id/btn_upload"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/ic_add_dark"/>
+                <ProgressBar
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:id="@+id/progress_upload"
+                    android:layout_alignParentStart="true"
+                    android:layout_above="@id/btn_upload" />
+                <Button
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btn_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_bgtemplate"
+                    android:text="Upload"
+                    android:layout_marginTop="10dp"
                     android:textSize="24dp" />
 
-            </LinearLayout>
-
-            <Button
+            </RelativeLayout>
+            <!--<ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/button_bgtemplate"
-                android:text="Selesai"
-                android:textSize="24dp" />
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_home"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih File"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="10dp"/>
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_add_dark"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Silahkan transfer ke Nomor Rekening dibawah ini:\n\n739093xxx\na/n. Parfume Jualanqoo\n\nCatatan:\nUpload foto/gambar yang jelas\n\nApabila ada pertanyaan silahkan hubungin no dibawah ini:\n\n0851xxxxxxxxx"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_bgtemplate"
+                        android:text="Upload"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </ScrollView>-->
         </LinearLayout>
-    </ScrollView>
-
-
-</LinearLayout>

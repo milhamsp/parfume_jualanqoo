@@ -58,7 +58,7 @@ public class act_transaksi extends AppCompatActivity {
     }
 
     private void setUpRecycleView_adm() {
-        Query query = db.collection("transaksi");
+        Query query = db.collection("transaksi").orderBy("tanggal_pesan", Query.Direction.DESCENDING);
         FirestoreRecyclerOptions<model_transaksi> options = new FirestoreRecyclerOptions.Builder<model_transaksi>()
                 .setQuery(query, model_transaksi.class).build();
         adapter = new adapter_transaksi(options);
@@ -70,7 +70,8 @@ public class act_transaksi extends AppCompatActivity {
 
     private void setUpRecycleView() {
         String userID = Objects.requireNonNull(auth.getCurrentUser()).getUid();
-        Query query = db.collection("transaksi").whereEqualTo("id_user",userID);
+        Query query = db.collection("transaksi").whereEqualTo("id_user",userID)
+                .orderBy("tanggal_pesan", Query.Direction.DESCENDING);
         FirestoreRecyclerOptions<model_transaksi> options = new FirestoreRecyclerOptions.Builder<model_transaksi>()
                 .setQuery(query, model_transaksi.class).build();
         adapter = new adapter_transaksi(options);

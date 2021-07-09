@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parfume_jualanqoo">
-        <activity android:name=".act_transaksi"></activity>
+        <activity android:name=".act_bukti"></activity>
+        <activity android:name=".act_transaksi" />
         <activity android:name=".act_produk_ed" />
         <activity android:name=".act_produk" />
         <activity android:name=".act_orderhistory" />
